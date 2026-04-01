@@ -1,0 +1,174 @@
+/* Footer chung */
+.box {
+    position: relative;
+    width: 100%;
+    max-width: 1431px;
+    margin: 0 auto;
+    background-color: #f0f0f0; /* Màu nền xám nhạt như ảnh */
+}
+
+.FOOTER {
+    width: 100%;
+    padding: 40px 20px;
+    background-color: transparent;
+    color: #000;
+    font-family: "Poppins", Helvetica, sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 150px;
+}
+
+.footer-heading {
+    font-size: 16px;
+    font-weight: 500;
+    color: #9f9f9f;
+    margin-bottom: 20px;
+}
+
+.footer-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-list li {
+    margin-bottom: 20px; /* Khoảng cách lớn như ảnh */
+}
+
+.footer-link {
+    font-size: 16px;
+    font-weight: 500;
+    color: #000;
+    text-decoration: none;
+}
+
+.footer-link:hover {
+    opacity: 0.8;
+    transition: opacity 0.2s ease;
+}
+
+.footer-logo {
+    flex: 1;
+    min-width: 200px;
+}
+
+.rectangle {
+    width: 100px; /* Kích thước hình Jumpman */
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.text-wrapper-13 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #000;
+}
+
+.footer-address p {
+    font-size: 16px;
+    color: #000;
+    margin-bottom: 20px;
+}
+
+.footer-subscribe {
+    flex: 2;
+    min-width: 300px;
+}
+
+.footer-subscribe h3 {
+    font-size: 18px;
+    font-weight: 500;
+    color: #000;
+    margin-bottom: 10px;
+}
+
+.footer-subscribe p {
+    font-size: 14px;
+    color: #000;
+    margin-bottom: 20px;
+}
+
+.subscribe-form {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.email-input {
+    width: 100%;
+    max-width: 300px;
+    padding: 5px 0;
+    border: none;
+    border-bottom: 1px solid #000; /* Đường kẻ dưới như ảnh */
+    background: transparent;
+    font-size: 14px;
+    color: #000;
+}
+
+.email-input::placeholder {
+    color: #9f9f9f;
+}
+
+.subscribe-button {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #000;
+    font-size: 14px;
+    font-weight: 500;
+    color: #000;
+    cursor: pointer;
+    margin-left: 20px;
+    padding: 5px 0;
+}
+
+.subscribe-button:hover {
+    opacity: 0.8;
+}
+
+.footer-bottom {
+    margin-top: 40px;
+    text-align: left;
+}
+
+.footer-divider {
+    border: none;
+    border-top: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+
+.footer-info {
+    font-size: 16px;
+    color: #000;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+    }
+
+    .footer-subscribe {
+        order: -1; /* Đưa subscribe lên đầu trên mobile nếu cần */
+    }
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
